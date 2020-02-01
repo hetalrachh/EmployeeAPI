@@ -17,10 +17,19 @@ Implementation steps-
 			<version>1.4.2.RELEASE</version>
            </parent>
 	   
-2. Add below properties (it is optional) to support java version 8.
+2. Add below properties (it is optional) in pom.xml to support java version 8.
 
-           <properties>
+            <properties>
 			<java.version>1.8</java.version>
 	    </properties>
+	    
+3. We want to create a REST API and this needs below dependency to be added in the pom.xml file.
+
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-web</artifactId>
+			</dependency>
+		</dependencies>
 
 
