@@ -1,5 +1,5 @@
 # EmployeeAPI
-REST API implemented in Spring Boot and CRUD operations performed using Oracle Database - 18C using JDBC connection.
+REST API implemented in Spring Boot and CRUD operations performed using Oracle Database - 18.3.0.0.0 using JDBC connection.
 
 The code includes two parts-
 1. Employees
@@ -21,9 +21,9 @@ Implementation steps-
 
             <properties>
 			<java.version>1.8</java.version>
-	    </properties>
+	     </properties>
 	    
-3. We want to create a REST API and this needs below dependency to be added in the pom.xml file.
+3. We want to create a REST API and this needs below dependency to be added in the pom.xml file. This dependency will inject all the jars required to use the annotations for creating a REST API. For example, @RestController, @RequestMapping etc.
 
 		<dependencies>
 			<dependency>
@@ -32,4 +32,22 @@ Implementation steps-
 			</dependency>
 		</dependencies>
 
+4. Add below dependencies to make oracle db connection using JDBC.
 
+		<dependency>
+			<groupId> org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-jdbc</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.oracle</groupId>
+			<artifactId>oracle</artifactId>
+			<version>18.3.0.0.0</version>
+		</dependency>
+		
+You might get an error "Missing artifact com.oracle:oracle:jar:18.3.0.0.0"
+
+Download ojdbc8.jar explicitly and place it in a folder and run below command in the folder containing the jar.
+> mvn install:install-file -Dfile=ojdbc8.jar -DgroupId=com.oracle -DartifactId=oracle -Dversion=18.3.0.0.0 -Dpackaging=jar -DgeneratePom=true
+
+Update the maven project once and you will see the error is gone and oracle-18.3.0.0.0.jar will be added to the Maven dependencies section.
