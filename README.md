@@ -11,10 +11,10 @@ Implementation steps-
 
 1. Create a maven project and add below dependency in the pom to make our project as a child of it. This dependency includes the default configuration of Spring boot.
 
-<parent>
+           <parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>1.4.2.RELEASE</version>
-</parent>
+           </parent>
 
 
