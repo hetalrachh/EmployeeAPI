@@ -47,7 +47,7 @@ Implementation steps-
 		
 You might get an error "Missing artifact com.oracle:oracle:jar:18.3.0.0.0"
 
-Download ojdbc8.jar explicitly and place it in a folder and run below command in the folder containing the jar.
+Download ojdbc8.jar explicitly and place it in a folder, run below command in the folder containing the jar and then you should get a BUILD SUCCESS message.
 > mvn install:install-file -Dfile=ojdbc8.jar -DgroupId=com.oracle -DartifactId=oracle -Dversion=18.3.0.0.0 -Dpackaging=jar -DgeneratePom=true
 
 Update the maven project once and you will see the error is gone and oracle-18.3.0.0.0.jar will be added to the Maven dependencies section.
