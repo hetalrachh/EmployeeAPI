@@ -73,6 +73,7 @@ Update the maven project once and you will see the error is gone and oracle-18.3
 		    lastname    VARCHAR2(20) NOT NULL,
 		    address     VARCHAR2(100) NOT NULL,
 		    deptid      NUMBER NOT NULL,
+		    emailid     VARCHAR(20) NOT NULL,
 		    CONSTRAINT dept_id_fk FOREIGN KEY ( deptid )
 			REFERENCES department ( deptid )
 		)
