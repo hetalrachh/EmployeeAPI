@@ -53,13 +53,17 @@ Download ojdbc8.jar explicitly and place it in a folder, run below command in th
 Update the maven project once and you will see the error is gone and oracle-18.3.0.0.0.jar will be added to the Maven dependencies section.
 
 5. Create a new configuration file application.properties in src/main/resources folder and add below properties.
+
 #server port
 server.port=8081
 
 #oracle db settings
 spring.datasource.url=jdbc:oracle:thin:@localhost:1521/orclpdb
+
 spring.datasource.username=<your username>
+	
 spring.datasource.password=<your password>
+	
 spring.datasource.driver-class-name=oracle.jdbc.OracleDriver
 
 
