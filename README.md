@@ -83,6 +83,17 @@ Update the maven project once and you will see the error is gone and oracle-18.3
 		    deptid     NUMBER NOT NULL PRIMARY KEY,
 		    deptname   VARCHAR2(20) NOT NULL
 		);
+		
+		
+		
+		{
+	"empId": 101,
+	"firstName": "Hetal",
+	"lastName": "Rachh",
+	"address" : "Mumbai",
+	"deptId": 1,
+	"emailId": "h.r@test.com"
+}
 
 
 
