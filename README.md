@@ -63,6 +63,25 @@ Update the maven project once and you will see the error is gone and oracle-18.3
 	   spring.datasource.username=<<your username>>
 	   spring.datasource.password=<<your password>>
            spring.datasource.driver-class-name=oracle.jdbc.OracleDriver
+	   
+6. Login to your oracle db schema using sqlplus or any oracle IDE like SQlDeveloper. Create two tables as below
+
+		--Employee table
+		CREATE TABLE employee (
+		    empid       NUMBER NOT NULL PRIMARY KEY,
+		    firstname   VARCHAR2(20) NOT NULL,
+		    lastname    VARCHAR2(20) NOT NULL,
+		    address     VARCHAR2(100) NOT NULL,
+		    deptid      NUMBER NOT NULL,
+		    CONSTRAINT dept_id_fk FOREIGN KEY ( deptid )
+			REFERENCES department ( deptid )
+		)
+
+		--department table
+		CREATE TABLE department (
+		    deptid     NUMBER NOT NULL PRIMARY KEY,
+		    deptname   VARCHAR2(20) NOT NULL
+		);
 
 
 
