@@ -90,23 +90,23 @@ Update the maven project once and you will see the error is gone and oracle-18.3
 
    a. Adding a new employee - 
     	              
-		      @RequestMapping(value = "/employees/add", method = RequestMethod.POST)
+	   @RequestMapping(value = "/employees/add", method = RequestMethod.POST)
    
    b. Retrieving all employees -
    			
-		      @RequestMapping(value = "/employees", method = RequestMethod.GET)
+	   @RequestMapping(value = "/employees", method = RequestMethod.GET)
    
    c. Getting an employee details based on id -
                       
-		      @RequestMapping(value = "/employees/{id}", method = RequestMethod.GET)
+           @RequestMapping(value = "/employees/{id}", method = RequestMethod.GET)
    
    d. Updating employee details - 
                       
-		      @RequestMapping(value="/employees/update", method=RequestMethod.PUT)
+           @RequestMapping(value="/employees/update", method=RequestMethod.PUT)
    
    e. Deleting an employee - 
                       
-		      @RequestMapping(value = "/employees/{id}", method = RequestMethod.DELETE)
+           @RequestMapping(value = "/employees/{id}", method = RequestMethod.DELETE)
 		
 		
 		
