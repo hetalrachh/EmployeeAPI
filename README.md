@@ -133,25 +133,25 @@ Update the maven project once and you will see the error is gone and oracle-18.3
 	   
 9. SQL queries for employee endpoints-
 
-a. Inserting a new employee - 
-   			
-	"INSERT INTO EMPLOYEE (empid, firstname, lastname, address, deptid, emailid) VALUES (?,?,?,?,?,?)"
-	
-b. Selecting all employees - 
-           
-	"SELECT * FROM EMPLOYEE"
-	
-c. Selecting an employee based on its id - 
-           
-	"SELECT * FROM EMPLOYEE WHERE EMPID=?"
-	
-d. Updating employee details - 
-           
-	"UPDATE EMPLOYEE SET EMPID=?, FIRSTNAME=?, LASTNAME=?, ADDRESS=?, DEPTID=?, EMAILID=? WHERE EMPID=?"
-	
-e. Deleting an employee based on its id - 
-           
-	"DELETE FROM EMPLOYEE WHERE EMPID=?")
+	a. Inserting a new employee - 
+
+		"INSERT INTO EMPLOYEE (empid, firstname, lastname, address, deptid, emailid) VALUES (?,?,?,?,?,?)"
+
+	b. Selecting all employees - 
+
+		"SELECT * FROM EMPLOYEE"
+
+	c. Selecting an employee based on its id - 
+
+		"SELECT * FROM EMPLOYEE WHERE EMPID=?"
+
+	d. Updating employee details - 
+
+		"UPDATE EMPLOYEE SET EMPID=?, FIRSTNAME=?, LASTNAME=?, ADDRESS=?, DEPTID=?, EMAILID=? WHERE EMPID=?"
+
+	e. Deleting an employee based on its id - 
+
+		"DELETE FROM EMPLOYEE WHERE EMPID=?")
 	   
  10. SQL queries for employee endpoints-
    a. Inserting a new department - 
