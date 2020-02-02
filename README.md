@@ -19,9 +19,11 @@ Implementation steps -
 	   
 2. Add below properties (it is optional) in pom.xml to support java version 8.
 
-           <properties>
-			 <java.version>1.8</java.version>
-	   </properties>
+           <parent>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-parent</artifactId>
+			<version>1.4.2.RELEASE</version>
+           </parent>
 	    
 3. We want to create a REST API and this needs below dependency to be added in the pom.xml file. This dependency will inject all the jars required to use the annotations for creating a REST API. For example, @RestController, @RequestMapping etc.
 
