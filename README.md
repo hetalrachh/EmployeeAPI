@@ -112,11 +112,11 @@ Update the maven project once and you will see the error is gone and oracle-18.3
 
    a. Adding a new department - 
     	              
-	    @RequestMapping(value = "/department/add", method = RequestMethod.POST)
+	   @RequestMapping(value = "/department/add", method = RequestMethod.POST)
    
    b. Retrieving all departments -
    			
-	    @RequestMapping(value = "/departments", method = RequestMethod.GET)
+	   @RequestMapping(value = "/departments", method = RequestMethod.GET)
    
    c. Getting department details based on id -
                       
