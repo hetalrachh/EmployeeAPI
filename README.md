@@ -86,7 +86,7 @@ Update the maven project once and you will see the error is gone and oracle-18.3
 		    deptname   VARCHAR2(20) NOT NULL
 		);
 		
-7. REST API endpoints related to employee -
+7. REST API endpoints for employee -
 
    a. Adding a new employee - 
     	              
@@ -107,6 +107,28 @@ Update the maven project once and you will see the error is gone and oracle-18.3
    e. Deleting an employee - 
                       
            @RequestMapping(value = "/employees/{id}", method = RequestMethod.DELETE)
+	   
+8. REST API endpoints for department-
+
+   a. Adding a new department - 
+    	              
+	    @RequestMapping(value = "/department/add", method = RequestMethod.POST)
+   
+   b. Retrieving all departments -
+   			
+	    @RequestMapping(value = "/departments", method = RequestMethod.GET)
+   
+   c. Getting department details based on id -
+                      
+           @RequestMapping(value = "/departments/{id}", method = RequestMethod.GET)
+   
+   d. Updating department details - 
+                      
+           @RequestMapping(value = "/departments/update", method = RequestMethod.PUT)
+   
+   e. Deleting a department - 
+                      
+           @RequestMapping(value = "/departments/{id}", method = RequestMethod.DELETE)
 		
 		
 		
