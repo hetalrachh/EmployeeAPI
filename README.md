@@ -99,7 +99,7 @@ Update the maven project once and you will see the error is gone and oracle-18.3
    
    c. Getting an employee details based on id -
                       
-           @RequestMapping(value = "/employees/{id}", method = RequestMethod.GET)
+           
    
    d. Updating employee details - 
                       
