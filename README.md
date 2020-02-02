@@ -132,21 +132,21 @@ e. Deleting a department -
     @RequestMapping(value = "/departments/{id}", method = RequestMethod.DELETE)
 	   
 9. SQL queries for employee endpoints-
-   a. Inserting a new employee - 
+a. Inserting a new employee - 
    			
-	   "INSERT INTO EMPLOYEE (empid, firstname, lastname, address, deptid, emailid) VALUES (?,?,?,?,?,?)"
-   b. Selecting all employees - 
+	"INSERT INTO EMPLOYEE (empid, firstname, lastname, address, deptid, emailid) VALUES (?,?,?,?,?,?)"
+b. Selecting all employees - 
            
-	   "SELECT * FROM EMPLOYEE"
-   c. Selecting an employee based on its id - 
+	"SELECT * FROM EMPLOYEE"
+c. Selecting an employee based on its id - 
            
-	   "SELECT * FROM EMPLOYEE WHERE EMPID=?"
-   d. Updating employee details - 
+	"SELECT * FROM EMPLOYEE WHERE EMPID=?"
+d. Updating employee details - 
            
-	   "UPDATE EMPLOYEE SET EMPID=?, FIRSTNAME=?, LASTNAME=?, ADDRESS=?, DEPTID=?, EMAILID=? WHERE EMPID=?"
-   e. Deleting an employee based on its id - 
+	"UPDATE EMPLOYEE SET EMPID=?, FIRSTNAME=?, LASTNAME=?, ADDRESS=?, DEPTID=?, EMAILID=? WHERE EMPID=?"
+e. Deleting an employee based on its id - 
            
-	   "DELETE FROM EMPLOYEE WHERE EMPID=?"
+	"DELETE FROM EMPLOYEE WHERE EMPID=?")
 	   
  10. SQL queries for employee endpoints-
    a. Inserting a new department - 
