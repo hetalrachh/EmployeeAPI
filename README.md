@@ -111,25 +111,25 @@ e. Deleting an employee -
 	   
 8. REST API endpoints for department-
 
-   a. Adding a new department - 
+a. Adding a new department - 
     	              
-	   @RequestMapping(value = "/department/add", method = RequestMethod.POST)
+    @RequestMapping(value = "/department/add", method = RequestMethod.POST)
    
-   b. Retrieving all departments -
+b. Retrieving all departments -
    			
-	   @RequestMapping(value = "/departments", method = RequestMethod.GET)
+    @RequestMapping(value = "/departments", method = RequestMethod.GET)
    
-   c. Getting department details based on id -
+c. Getting department details based on id -
                       
-           @RequestMapping(value = "/departments/{id}", method = RequestMethod.GET)
+    @RequestMapping(value = "/departments/{id}", method = RequestMethod.GET)
    
-   d. Updating department details - 
+d. Updating department details - 
                       
-           @RequestMapping(value = "/departments/update", method = RequestMethod.PUT)
+    @RequestMapping(value = "/departments/update", method = RequestMethod.PUT)
    
-   e. Deleting a department - 
+e. Deleting a department - 
                       
-           @RequestMapping(value = "/departments/{id}", method = RequestMethod.DELETE)
+    @RequestMapping(value = "/departments/{id}", method = RequestMethod.DELETE)
 	   
 9. SQL queries for employee endpoints-
    a. Inserting a new employee - 
