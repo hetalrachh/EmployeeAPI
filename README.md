@@ -154,6 +154,7 @@ Update the maven project once and you will see the error is gone and oracle-18.3
 		"DELETE FROM EMPLOYEE WHERE EMPID=?")
 	   
  10. SQL queries for employee endpoints-
+ 
 	a. Inserting a new department - 
 
 		"INSERT INTO DEPARTMENT (deptid, deptname) VALUES (?,?)"
