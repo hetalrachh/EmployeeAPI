@@ -167,6 +167,15 @@ Update the maven project once and you will see the error is gone and oracle-18.3
 
 		 "SELECT * FROM DEPARTMENT WHERE DEPTID=?"
 		 
+        d. Updating department details -  
+
+		 "UPDATE DEPARTMENT SET DEPTID=?, DEPTNAME=? WHERE DEPTID=?"
+		 
+        e. Deleting a department based on its id -
+
+		 "DELETE FROM DEPARTMENT WHERE DEPTID=?"
+        
+		 
 	
 		 
 	
