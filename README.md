@@ -7,7 +7,7 @@ The code includes two parts-
 
 Each employee can belong to one department.
 
-Implementation steps-
+Implementation steps -
 
 1. Create a maven project and add below parent pom dependency in the pom.xml file to make our project as a child of it. This dependency includes the default configuration and provides plugin management for applications built with Maven.
 
@@ -21,7 +21,7 @@ Implementation steps-
 
             <properties>
 			<java.version>1.8</java.version>
-	     </properties>
+	   	 </properties>
 	    
 3. We want to create a REST API and this needs below dependency to be added in the pom.xml file. This dependency will inject all the jars required to use the annotations for creating a REST API. For example, @RestController, @RequestMapping etc.
 
@@ -50,6 +50,8 @@ You might get an error "Missing artifact com.oracle:oracle:jar:18.3.0.0.0"
 Download ojdbc8.jar explicitly and place it in a folder, run below command in the folder containing the jar and then you should get a BUILD SUCCESS message.
 > mvn install:install-file -Dfile=ojdbc8.jar -DgroupId=com.oracle -DartifactId=oracle -Dversion=18.3.0.0.0 -Dpackaging=jar -DgeneratePom=true
 
+This will inject oracle-18.3.0.0.0.jar in the project's classpath required to make oracle database connection. This step is to be done because the jar is not yet available on maven central repository. 
+
 Update the maven project once and you will see the error is gone and oracle-18.3.0.0.0.jar will be added to the Maven dependencies section.
 
 5. Create a new configuration file application.properties in src/main/resources folder and add below properties.
@@ -68,15 +70,15 @@ Update the maven project once and you will see the error is gone and oracle-18.3
 
 		--Employee table
 		CREATE TABLE employee (
-		    empid       NUMBER NOT NULL PRIMARY KEY,
-		    firstname   VARCHAR2(20) NOT NULL,
-		    lastname    VARCHAR2(20) NOT NULL,
-		    address     VARCHAR2(100) NOT NULL,
-		    deptid      NUMBER NOT NULL,
-		    emailid     VARCHAR(20) NOT NULL,
-		    CONSTRAINT dept_id_fk FOREIGN KEY ( deptid )
-			REFERENCES department ( deptid )
-		)
+    		empid       INTEGER NOT NULL PRIMARY KEY,
+    		firstname   VARCHAR2(20) NOT NULL,
+    		lastname    VARCHAR2(20) NOT NULL,
+    		address     VARCHAR2(100) NOT NULL,
+    		deptid      INTEGER NOT NULL,
+    		emailid     VARCHAR(20) NOT NULL,
+    		CONSTRAINT dept_id_fk FOREIGN KEY ( deptid )
+       		 REFERENCES department ( deptid )
+            )
 
 		--department table
 		CREATE TABLE department (
@@ -86,14 +88,4 @@ Update the maven project once and you will see the error is gone and oracle-18.3
 		
 		
 		
-		{
-	"empId": 101,
-	"firstName": "Hetal",
-	"lastName": "Rachh",
-	"address" : "Mumbai",
-	"deptId": 1,
-	"emailId": "h.r@test.com"
-}
-
-
 
